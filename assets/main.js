@@ -250,15 +250,18 @@ function nextQuestion() {
 shuffleArray(questions);
 loadQuestion();
 // Fungsi untuk mengirim data ke skrip Google Apps
-var form = document.getElementById("shhetdb-form");
+var form = document.getElementById("sheetdb-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(form.action, {
     method: "POST",
     body: new FormData(document.getElementById("sheetdb-form")),
   })
-    .then((response) => rensponse.json())
-    .then((html) => {
-      window.open("d.html", "_blank");
+    .then(function (data) {
+      // Data terkirim, maka lakukan pengalihan
+      location.replace("thanks.html"); // Ganti dengan halaman tujuan Anda
+    })
+    .catch(function (error) {
+      console.error("Error:", error);
     });
 });
