@@ -141,7 +141,7 @@ let questions = [
       "Shalat Istihza",
       "Shalat Gerhana",
     ],
-    answer: 0,
+    answer: 1,
   },
   {
     question: "Berapa rakaat shalat Istisqa?",
@@ -156,7 +156,7 @@ let questions = [
       "Saat Kemarau",
       "Saat Membutuhkan Petunjuk",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question: "Apa tujuan dari melaksanakan shalat Istisqa?",
